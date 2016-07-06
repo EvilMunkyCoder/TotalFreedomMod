@@ -8,6 +8,8 @@ public enum Title implements Displayable
 
     DEVELOPER("a", "Developer", ChatColor.DARK_PURPLE, "Dev"),
     OWNER("the", "Owner", ChatColor.BLUE, "Owner");
+    SYSTEM_ADMIN("a", "System_Admin", ChatColor.DARK_RED, "Sys")
+    EXECUTIVE("an", "Execuive", ChatColor.RED, "Exec")
 
     private final String determiner;
     @Getter
@@ -24,7 +26,7 @@ public enum Title implements Displayable
         this.determiner = determiner;
         this.name = name;
         this.tag = "[" + tag + "]";
-        this.coloredTag = ChatColor.DARK_GRAY + "[" + color + tag + ChatColor.DARK_GRAY + "]" + color;
+        this.coloredTag = ChatColor.PURPLE + "[" + color + tag + ChatColor.PURPLE + "]" + color;
         this.color = color;
     }
 

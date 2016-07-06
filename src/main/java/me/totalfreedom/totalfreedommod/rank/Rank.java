@@ -12,8 +12,8 @@ public enum Rank implements Displayable
     SUPER_ADMIN("a", "Super Admin", Type.ADMIN, "SA", ChatColor.AQUA),
     TELNET_ADMIN("a", "Telnet Admin", Type.ADMIN, "STA", ChatColor.DARK_GREEN),
     SENIOR_ADMIN("a", "Senior Admin", Type.ADMIN, "SrA", ChatColor.GOLD),
-    EXECUTIVE("an", "Executive", type.ADMIN, "Exec", ChatColor.RED)
-    SYSTEM_ADMIN("a", "System Admin", type.ADMIN, "System", ChatColor.DARK_RED)
+    EXECUTIVE("an", "Executive", type.ADMIN, "Exec", ChatColor.RED),
+    SYSTEM_ADMIN("a", "System Admin", type.ADMIN, "System", ChatColor.DARK_RED),
     TELNET_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE),
     SENIOR_CONSOLE("the", "Console", Type.ADMIN_CONSOLE, "Console", ChatColor.DARK_PURPLE);
     @Getter

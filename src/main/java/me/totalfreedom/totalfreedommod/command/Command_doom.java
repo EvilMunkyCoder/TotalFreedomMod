@@ -33,8 +33,8 @@ public class Command_doom extends FreedomCommand
             return true;
         }
 
-        FUtil.adminAction(sender.getName(), "Casting oblivion over " + player.getName(), true);
-        FUtil.bcastMsg(player.getName() + " will be completely obliviated!", ChatColor.RED);
+        FUtil.adminAction(sender.getName(), "DOOMING " + player.getName(), true);
+        FUtil.bcastMsg(player.getName() + " Has Been Doomed!", ChatColor.RED);
 
         final String ip = player.getAddress().getAddress().getHostAddress().trim();
 
@@ -54,7 +54,7 @@ public class Command_doom extends FreedomCommand
 
         // Ban player
         Ban ban = Ban.forPlayer(player, sender);
-        ban.setReason("&cFUCKOFF");
+        ban.setReason("&cAbusive Admin!");
         for (String playerIp : plugin.pl.getData(player).getIps())
         {
             ban.addIp(playerIp);
@@ -102,7 +102,7 @@ public class Command_doom extends FreedomCommand
                 player.getWorld().createExplosion(player.getLocation(), 4F);
 
                 // kick player
-                player.kickPlayer(ChatColor.RED + "FUCKOFF, and get your shit together!");
+                player.kickPlayer(ChatColor.RED + "Such abuse much?");
             }
         }.runTaskLater(plugin, 3L * 20L);
 
